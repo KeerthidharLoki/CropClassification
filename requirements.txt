@@ -1,0 +1,9 @@
+Flask
+pandas
+numpy
+matplotlib
+keras
+sklearn
+tensorflow
+nbimporter
+ipywidgets

@@ -1,0 +1,67 @@
+<html>
+    <body>
+        <h1>
+            CROP CLASSIFICATION
+        </h1>
+        <style>
+            /* Center the heading */
+            h1 {
+              text-align: center; padding-top: 3%;
+            }
+          </style>
+
+          <h3>You can choose from:[Cherry,
+            Coffee-plant,
+            Cucumber,
+            Fox_nut(Makhana),
+            Lemon,
+            Olive-tree,
+            Pearl_millet(bajra),
+            Tobacco-plant,
+            almond,
+            banana,
+            cardamom,
+            chilli,
+            clove,
+            coconut,
+            cotton,
+            gram,
+            jowar,
+            jute,
+            maize,
+            mustard-oil,
+            papaya,
+            pineapple,
+            rice,
+            soyabean,
+            sugarcane,
+            sunflower,
+            tea,
+            tomato,
+            vigna-radiati(Mung),
+            wheat]</h3>
+        <form action="{{url_for('predict')}}" method="post" enctype="multipart/form-data">
+            <label for="img">Select image:</label>
+            <input type="file" id="img" name="img" accept="image/*">
+
+            <input type="submit" value="Predict">
+
+          
+
+            
+
+
+            <h2>HURRAY! The crop is {{ imag  }}</h2>
+          </form>
+          <style>
+            /* Center the heading */
+            form {
+              text-align: center; padding-top: 1%; font-size: 6mm;
+            }
+
+            
+        
+          </style>
+          
+    </body>
+</html>
